@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import HeaderLink from "../HeaderLink";
 import Logo from "../Logo";
+import { GoRepoForked, GoCode } from "react-icons/go";
+import { QUERIES } from "../../constants";
 
 const Header = () => {
   return (
@@ -10,10 +12,16 @@ const Header = () => {
         <Logo />
         <LinksWrapper>
           <HeaderLink href="https://github.com/galnir/Master-Bot">
-            Code
+            Code{" "}
+            <GoCode
+              style={{ display: "inline-block", transform: "translateY(1px)" }}
+            />
           </HeaderLink>
           <HeaderLink href="https://github.com/galnir/Master-Bot/fork">
-            Fork
+            Fork{" "}
+            <GoRepoForked
+              style={{ display: "inline-block", transform: "translateY(1px)" }}
+            />
           </HeaderLink>
         </LinksWrapper>
       </HeaderWrapper>
@@ -26,12 +34,20 @@ const HeaderWrapper = styled.div`
   padding: 0 1.5rem;
   justify-content: space-between;
   color: var(--color-headline);
+
+  @media ${QUERIES.phoneAndSmaller} {
+    align-items: center;
+  }
 `;
 
 const LinksWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 4rem;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    gap: 1rem;
+  }
 `;
 
 export default Header;

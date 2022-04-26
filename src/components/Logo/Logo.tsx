@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
-import { WEIGHTS } from "../../constants";
+import { QUERIES, WEIGHTS } from "../../constants";
 
 const Logo = () => {
   return (
@@ -31,6 +31,10 @@ const StyledLink = styled(Link)`
 const LogoText = styled.h1`
   font-size: 3rem;
   font-weight: ${WEIGHTS.bold};
+
+  @media ${QUERIES.phoneAndSmaller} {
+    font-size: 1.75rem;
+  }
 `;
 
 export default Logo;
