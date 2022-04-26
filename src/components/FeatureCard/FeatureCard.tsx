@@ -21,6 +21,8 @@ const Wrapper = styled.article`
   background: var(--color-feature-background);
   flex: 1 0 40%;
   height: 300px;
+  box-shadow: 0px 2px 2px var(--color-button), 0px 2px 4px var(--color-button),
+    0px 4px 8px var(--color-button), 0px 8px 16px var(--color-button);
 `;
 
 const CardHeader = styled.h1`
