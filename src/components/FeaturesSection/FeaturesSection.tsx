@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { QUERIES } from "../../constants";
 import FeatureCard from "../FeatureCard";
 
 const FeaturesSection = () => {
@@ -37,6 +38,11 @@ const FeaturesHeader = styled.h1`
   color: var(--color-headline);
   font-size: 2rem;
   margin: 3rem 0 4rem 0;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    font-size: 1.125rem;
+    margin: 1rem 0 1rem 0;
+  }
 `;
 
 const CardWrapper = styled.div`
@@ -46,6 +52,11 @@ const CardWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   gap: 2rem;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    margin: 0 0.5rem;
+    gap: 0.75rem;
+  }
 `;
 
 export default FeaturesSection;
