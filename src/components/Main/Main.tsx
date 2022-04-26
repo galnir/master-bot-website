@@ -77,6 +77,7 @@ const ExampleWrapper = styled.section`
 
   @media ${QUERIES.phoneAndSmaller} {
     gap: 2rem;
+    padding-bottom: 2rem;
   }
 `;
 
@@ -89,7 +90,8 @@ const Example = styled.article`
   padding: 1.5rem 2rem;
 
   @media ${QUERIES.phoneAndSmaller} {
-    padding: 1rem 1rem;
+    padding: 0 0 0 1.5rem;
+    justify-content: flex-end;
   }
 `;
 
@@ -102,7 +104,7 @@ const ExampleParagraph = styled.p`
   @media ${QUERIES.phoneAndSmaller} {
     font-size: 0.875rem;
     text-align: left;
-    width: 50%;
+    width: 30%;
   }
 `;
 
