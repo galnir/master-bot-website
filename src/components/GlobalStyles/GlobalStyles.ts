@@ -36,6 +36,9 @@ body {
   --color-headline: hsl(${COLORS.headline});
   --color-paragraph: hsl(${COLORS.paragraph});
   --color-button: hsl(${COLORS.button});
+  --color-secondary-background: hsl(${COLORS.secondaryBackground});
+  --color-secondary-paragraph: hsl(${COLORS.featureCardParagraph});
+  --color-feature-background: hsl(${COLORS.featureCardBackground});
   background: var(--color-background);
 }
 /*

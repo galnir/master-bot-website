@@ -6,6 +6,9 @@ export const COLORS = {
   buttonText: `60 100% 100%`,
   stroke: `0 0% 0%`,
   tertiary: `155 61% 44%`,
+  secondaryBackground: `216 6% 15%`,
+  featureCardParagraph: `214 16% 64%`,
+  featureCardBackground: `240 8% 9%`,
 };
 
 export const WEIGHTS = {
