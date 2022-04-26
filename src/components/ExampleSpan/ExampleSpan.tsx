@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { QUERIES } from "../../constants";
 
 type ExampleSpanProps = {
   children: React.ReactNode;
@@ -25,6 +26,10 @@ const Span = styled.span<{ from: string; to: string }>`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    font-size: 1rem;
+  }
 `;
 
 export default ExampleSpan;

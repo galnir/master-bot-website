@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 import ExampleSpan from "../ExampleSpan";
 import FeaturesSection from "../FeaturesSection";
+import { QUERIES } from "../../constants";
 
 const Main = () => {
   return (
@@ -62,6 +63,10 @@ const MainWrapper = styled.main`
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    margin-top: 1rem;
+  }
 `;
 
 const ExampleWrapper = styled.section`
@@ -69,6 +74,10 @@ const ExampleWrapper = styled.section`
   display: flex;
   flex-direction: column;
   gap: 4rem;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    gap: 2rem;
+  }
 `;
 
 const Example = styled.article`
@@ -78,6 +87,10 @@ const Example = styled.article`
   align-items: center;
   gap: 32px;
   padding: 1.5rem 2rem;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    padding: 1rem 1rem;
+  }
 `;
 
 const ExampleParagraph = styled.p`
@@ -85,6 +98,12 @@ const ExampleParagraph = styled.p`
   font-size: 1.25rem;
   text-align: center;
   width: 40%;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    font-size: 0.875rem;
+    text-align: left;
+    width: 50%;
+  }
 `;
 
 export default Main;
