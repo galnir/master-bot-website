@@ -32,6 +32,7 @@ const FeaturesSection = () => {
 const Wrapper = styled.section`
   background: var(--color-secondary-background);
   text-align: center;
+  padding-bottom: 2rem;
 `;
 
 const FeaturesHeader = styled.h1`
@@ -42,6 +43,7 @@ const FeaturesHeader = styled.h1`
   @media ${QUERIES.phoneAndSmaller} {
     font-size: 1.125rem;
     margin: 1rem 0 1rem 0;
+    padding-bottom: 1rem;
   }
 `;
 
